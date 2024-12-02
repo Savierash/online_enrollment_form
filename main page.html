@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Online Enrollment Registration for Upcoming First Year Students</title>
+        <link rel="stylesheet" href="main page.css"> 
+        
+        <!--icons-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar"> 
+                <a href="#" class="nav_logo">
+                    <img src="img/PHINMA.png" alt="University of Pangasinan">
+                </a>
+                
+                <ul class="nav_items">
+                    <li class="nav_item">
+                    <a href="#welcome-container" class="active">Home</a>
+                    <a href="#container1" >Registration</a>
+                    <a href="#section1" >About</a>
+                    <a href="#container3" > Contact</a>
+                </li>
+            </ul>
+
+            <button class="button_nav" id="form-open">LOG IN</button>
+        </nav>
+    </header>
+
+    <!--welcome-->
+    <div class="welcome-container" id="welcome-container">
+        <h1>Welcome</h1>
+        <p>Online Enrollment Registration for Upcoming First Year Students!<br>
+            We are excited to have you join our academic community. To get started, Click the Login above.</p>
+       </div>
+
+        <!--home codes-->
+        <section class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+           
+            <!--login form codes-->
+            <div class="form login_form">
+                <form action="#">
+                    <h2>Login</h2> 
+                   
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required/>
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter your password" required/>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <!--reminder-->
+                    <div class="option_field">
+                        <span class="checkbook">
+                            <input type="checkbox" id="check">
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+
+                    <button class="button">Login Now</button>
+
+                    <div class="login_signup">
+                        Don't have an account? <a href="#" id="signup"> Signup</a></div>
+                </form>
+            </div>
+
+            <!--signup form codes-->
+            <div class="form signup_form">
+                <form action="#">
+                    <h2>Signup</h2>
+                   
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required/>
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create password" required/>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm password" required/>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <button class="button">Signup Now</button>
+
+                    <div class="login_signup">
+                        Already have an account? <a href="#" id="login">Login</a></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--steps-->
+  <section class="container1" id="container1">
+    <h2>Official Enrollment Process</h2>
+    
+    <div class="steps-container">
+        <div class="step enrollment-step">
+            <h2>Marketing Department</h2>
+            <ol>
+                <li>Fill up Student Permanent Record (SPR) & Info Sheet</li>
+                <li>Verification of Required Documents (if available):
+                    <ul>
+                        <li>PSA Birth Certificate</li>
+                        <li>High School/Senior High School Report Card (F138)</li>
+                        <li>Form 137 (may follow)</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="step enrollment-step">
+            <h2>Registrar and Finance</h2>
+            <ol>
+                <li>Encoding of SPR</li>
+                <li>Admission</li>
+                <li>Submission of Requirement (if available):
+                    <ul>
+                        <li>PSA Birth Certificate</li>
+                        <li>High School/Senior High School Report Card (F138)</li>
+                        <li>Form 137 (may follow)</li>
+                    </ul>
+                </li>
+                <li>Downpayment
+                    <ul>
+                        <li>College Non-scholars: can pay P1,000.00 for registration fee</li>
+                        <li>College Scholars: can pay P750.00 for registration fee</li>
+                        <li>SHS: can pay P500.00 for registration fee</li>
+                    </ul>
+                </li>
+                <li>Issuance of Official Receipt (OR) of down payment.</li>
+            </ol>
+        </div>
+
+        <div class="step enrollment-step">
+            <h2>Marketing Department</h2>
+            <ol>
+                <li>Verification of issued OR number</li>
+                <li>Printing of ORF (Official Registration Form) or COM (Certificate of Matriculation)</li>
+                <li>Join designated Facebook groups and fill up ID Application Form</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+    
+     <!-- Enrollment Form Section -->
+  <section class="container2">
+    <header>Online Enrollment Form</header>
+    <form action="#" class="form" id="enrollmentForm">
+      <div class="input-box">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter full name" required />
+      </div>
+      <div class="input-box">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter email address" required />
+      </div>
+      <div class="input-box">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter phone number" required />
+      </div>
+      <div class="input-box">
+        <label for="subject">Subject</label>
+        <input type="subject" id="subject" placeholder="Subject" required />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Success Popup -->
+  <div class="popup" id="successPopup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <p>Form submitted successfully!</p>
+    </div>
+  </div>
+
+    <!--about code-->
+    <h1 >About Us</h1>
+    <main class="scrollable-main">
+        <div class="about-container">
+            <div class="about-section" id="section1">
+                <div class="image-container">
+                <img src="img/upang pe.jpg" alt="Image 1">
+            </div>
+            <div class="text-container">
+                <p> An innovative Philippine business institution, PHINMA always looks for ways to help
+                    Filipinos attain better lives. In 2004, they realized that investing in education was key
+                    to fully accomplishing their mission.
+                    
+                    Overall enrollment figures in the country have always been high. Despite this, attrition rates remained high and consistent. Out of four students who enter first grade, only one will go on to finish a tertiary degree. Learning about these statistics led PHINMA’s leaders to realize that they could fulfill their mission by helping improve the country’s state of education. With this in mind, they entered the education field to introduce reforms and innovations. In 2004, PHINMA Education was born.
+                    
+                    For more than a decade, PHINMA built its reputation on transforming existing educational institutions to better serve Filipino students. PHINMA Education begins this process by strategically selecting a school from a key growth area and thoroughly transforming its academics, operations, and student community in order to ensure success for Filipino youth coming from low-income families.
+                    
+                    PHINMA Education is under the PHINMA Group of Companies, the first Filipino-managed investment firm.</p> 
+            </div>
+        </div>
+
+        <div class="about-section" id="section2">
+            <div class="image-container">
+                <img src="img/PHINMA.png" alt="Image 2">
+            </div>
+            <div class="text-container">
+                <p>The University of Pangasinan has a proud history of academic
+                    excellence, with many of its graduates going on to become
+                    leaders in their respective fields.<br> It is also known for its
+                    strong commitment to community service, with various
+                    outreach programs and initiatives aimed at uplifting the
+                    lives of the people in the province of Pangasinan.
+                    We have since expanded our presence across the country with our network of schools namely:
+                    PHINMA Cagayan de Oro College, PHINMA University of Pangasinan, PHINMA University of Iloilo, Southwestern University PHINMA in Cebu City, PHINMA Saint Jude College in Manila, PHINMA Republican College in Quezon City, PHINMA Rizal College of Laguna, and PHINMA Union College of Laguna.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+        <section class="values-section">
+            <h2 class="values-heading">Our Values</h2>
+            <div class="values-list">
+                <div class="value-item">
+                    <img src="img/integrity.jpg" alt="Integrity">
+                    <h3 class="value-name">Integrity</h3>
+                    <p class="value-text">We value dedication, honesty, credibility, and consistency in our words and actions. We recognize professional and social responsibility for our students toward a better quality of life. We stand by our values. We are true to our words.</p>
+                </div>
+                <div class="value-item">
+                    <img src="img/competence.jpg" alt="Competence">
+                    <h3 class="value-name">Competence</h3>
+                    <p class="value-text">We recognize an individual’s qualifications and help translate them into the ability to perform tasks and deliver desired results by training them to high levels of proficiency. We qualify.</p>
+                </div>
+                <div class="value-item">
+                    <img src="img/commitment.jpg" alt="Commitment">
+                    <h3 class="value-name">Commitment</h3>
+                    <p class="value-text">We take the Network's mission to heart. We pledge our hours and our energy to fulfilling our vision of a better life. We say “I do” to the call of service, in crisis and victory, sunny or rainy days, through plans and execution. We see you through to the end.</p>
+                </div>
+                <div class="value-item">
+                    <img src="img/professional.jpg" alt="Professionalism">
+                    <h3 class="value-name">Professionalism</h3>
+                    <p class="value-text">We follow a high degree of professionalism in all aspects – from the way we dress to our work ethics. We don’t let our work be disrupted by our personal interests and emotions. We aim to perform excellently – no shortcuts, no excuses, just results.</p>
+                </div> 
+                <div class="value-item">
+                    <img src="img/teamwork.jpg" alt="Teamwork">
+                    <h3 class="value-name">Teamwork</h3>
+                    <p class="value-text">We believe in working together to successfully achieve our goal. We celebrate victories together; we accept defeats together. We aim for the target together.</p>
+                </div>
+                <div class="value-item">
+                   <img src="img/openess.jpg" alt="Openness">
+                   <h3 class="value-name">Openness</h3>
+                   <p class="value-text">We are receptive to changes that may come through time and see it as an opportunity to create and breed new ideas. We ride enthusiastically into uncharted territories.</p>
+                </div>
+            </section>
+        </main>
+
+    
+
+  <!--CONTACT codes-->
+  <div class="container3" id="container3">
+    <h2>Contact Us</h2>
+    <form action="mailto:richelleanne0621@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <footer>
+      <p>&copy; 2024 University of Pangasinan. All rights reserved//rchllsuniga</p>
+  </footer>
+
+    <script src="main page.js"></script>
+
+</body>
+</html>
+        
+        
